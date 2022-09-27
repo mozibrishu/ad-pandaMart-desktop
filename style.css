@@ -4,7 +4,7 @@
 }
 
 
-.container {
+.purple__wrapper {
     width: 728px;
     height: 120px;
     max-width: 100%;
@@ -20,10 +20,11 @@
 }
 
 /* Slide_1 */
-.slide_1{
+.slide_1 {
     height: 100%;
     width: 100%;
 }
+
 .slide_1 .element_1 {
     height: 100%;
     width: 100%;
@@ -54,7 +55,31 @@
     width: 100%;
 }
 
+.purple_generic_close {
+    top: 0px;
+    right: 0px;
+    height: 22px;
+    width: 22px;
+    background: url("./Generic/close.svg") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    cursor: pointer;
+    margin: 0 !important;
+    z-index: 1;
+}
 
+.purple_generic_icon {
+    position: absolute;
+    top: 33px;
+    right: 0px;
+    background: url('./Generic/info.svg') no-repeat;
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    margin: 0 !important;
+    z-index: 1;
+}
 
 /* Utility class */
 .absolute {
@@ -69,28 +94,65 @@
     opacity: 0;
 }
 
-.purple_generic_close {
-    top: 7px;
-    right: 5px;
-    height: 18px;
-    width: 18px;
-    background: url("./Generic/close.svg") no-repeat;
-    background-size: 100% 100%;
-    position: absolute;
-    cursor: pointer;
-    margin: 0 !important;
-    z-index: 1;
+
+.topBottom-anim {
+    animation: topBottom 2s ease-in-out infinite;
 }
 
-.purple_generic_icon {
-    position: absolute;
-    top: 33px;
-    right: 5px;
-    background: url('./Generic/info.svg') no-repeat;
-    background-size: 100% 100%;
-    width: 18px;
-    height: 18px;
-    cursor: pointer;
-    margin: 0 !important;
-    z-index: 1;
+@keyframes topBottom {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+}
+
+.topBottom2-anim {
+    animation: topBottom2 2s ease-in-out infinite;
+}
+
+@keyframes topBottom2 {
+
+    0%,
+    100% {
+        transform: translateY(-4px);
+    }
+
+    50% {
+        transform: translateY(3px);
+    }
+}
+
+.orderNow-anim {
+    animation: orderNow 2s ease-in-out infinite;
+}
+
+@keyframes orderNow {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.04);
+    }
+}
+
+
+.hideZoomOut {
+    animation-name: hideZoomOut;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1
+}
+@keyframes hideZoomOut {
+    100% {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3)
+    }
 }
