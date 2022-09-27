@@ -46,6 +46,19 @@
     top: 0px;
     left: 0px;
 }
+
+.slide_1 .element_7 {
+    bottom: 90px;
+    right: 5px;
+    height: 22px;
+    width: 22px;
+    background: url("./close.svg") no-repeat;
+}
+
+.slide_1 .element_8 {
+    top: 0px;
+    left: 0px;
+}
 /* Utility class */
 .absolute {
     position: absolute;
