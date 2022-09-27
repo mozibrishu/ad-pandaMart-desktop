@@ -37,6 +37,7 @@
     height: 100%;
     width: 100%;
 }
+
 .slide_1 .element_5 {
     height: 100%;
     width: 100%;
@@ -53,6 +54,7 @@
     top: 0px;
     left: 0px;
 }
+
 /* Utility class */
 .absolute {
     position: absolute;
@@ -73,8 +75,12 @@
     width: 18px;
     background: url("./Generic/close.svg") no-repeat;
     background-size: 100% 100%;
-
+    position: absolute;
+    cursor: pointer;
+    margin: 0 !important;
+    z-index: 1;
 }
+
 .purple_generic_icon {
     position: absolute;
     top: 33px;
@@ -84,6 +90,6 @@
     width: 18px;
     height: 18px;
     cursor: pointer;
-    margin: 0!important;
+    margin: 0 !important;
     z-index: 1;
 }
